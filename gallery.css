@@ -1,0 +1,257 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.retangulo-de-cima {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+.logo-texto {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuzin {
+  display: flex;
+  gap: 30px;
+  color: white;
+  font-size: 13px;
+  text-decoration: none ;
+}
+
+.menuzin div:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.fundao {
+  background-image: url(home-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textoprincipal{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    height: 100%;
+    padding-top: 1%;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.gallery{
+    font-size: 60px;
+}
+
+.homegallery{
+    font-size: 20px ;
+    
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.section2 {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-left: 10%;
+  padding-top: 30px; 
+  padding-bottom: 30px;  
+  height: 160vh;
+}
+
+.divimagens {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.divimagens img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.divimagens::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.divimagens:hover::after {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.divimagens:hover .overlay {
+  bottom: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+  z-index: 2;
+  font-size: larger;
+}
+
+.botao-imagens{
+  display: block;
+  margin-left: 45%;
+  margin-bottom: 4%;
+  background-color: #fcdc00;
+  color: black;
+  height: 40px;
+  border: none;
+  width: 170px;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------*/
+
+#parte5 {
+  justify-content: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btnfolowinsta {
+  background: #fcdc00;
+  display: flex;
+  color: #222222;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+#btnfolowinsta {
+  background: #fcdc00;
+  font-size: 80%;
+  color: #222222;
+  height: 8vh;
+  width: 15%;
+  font-weight: bold;
+}
+
+#imgsp5 img {
+  width: 24vh;
+}
+
+.imagenssection5{
+  padding-left: 1%;
+  margin-top: 5%;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.rodape {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 40px;
+  background-color: #030b28;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.coluna {
+  width: 300px;
+  margin: 10px;
+}
+
+.coluna h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.coluna p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.copy {
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.colorlib {
+  color: #f5c518;
+}
+
+.newsletter {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.enviar {
+  background-color: #f5c518;
+  color: black;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.icones {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icones div {
+  font-size: 18px;
+  cursor: pointer;
+}
